@@ -1,0 +1,39 @@
+import java.io.*;
+
+public class  Fibonanci
+
+{
+
+public static void main(String[] args) throws IOException
+
+{
+
+BufferedReader ip = new BufferedReader(new InputStreamReader(System.in));
+
+System.out.print("Masukkan jumlah deret fibonacci : ");
+
+int inp = Integer.parseInt(ip.readLine());
+
+int num1=0,num2=1,temp;
+
+System.out.println("Deret Fibonacci \n");
+
+System.out.print(""+num2);
+
+for (int i=1;i<inp;++i)
+
+{
+
+temp=num2;
+
+num2+=num1;
+
+num1=temp;
+
+System.out.print(num2+ "");
+}
+
+
+}
+
+}
